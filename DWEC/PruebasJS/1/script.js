@@ -1,4 +1,4 @@
 function mostrarMensaje(){
-    alert("Viva Cristo reys")
+    alert("Viva Cristo rey")
 }
 mostrarMensaje();
