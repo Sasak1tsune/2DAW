@@ -18,6 +18,7 @@ public class Ej_19092023{
             seleccion = entrada.nextByte();
             switch(seleccion){
                 case 1:
+                    alReves();
                 break;
                 case 0:
                     salida=true;
@@ -41,7 +42,7 @@ public class Ej_19092023{
         String cadenaReves="";
             for (int i=cadenaimportada.length();i>-1;i++){
                 char caracter=cadenaimportada.charAt(i);
-                cadenaReves.
+                cadenaReves= cadenaReves+caracter;
             }
         return cadenaReves;
     }
