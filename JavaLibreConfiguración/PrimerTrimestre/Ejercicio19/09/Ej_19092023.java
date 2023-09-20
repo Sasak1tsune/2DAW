@@ -18,7 +18,7 @@ public class Ej_19092023{
             seleccion = entrada.nextByte();
             switch(seleccion){
                 case 1:
-                    alReves();
+                    ;
                 break;
                 case 0:
                     salida=true;
