@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secuencia4Imagenes</title>
+</head>
+<script>
+    function cambiaImg() {
+    var imagenVar = 1;
+    var image = document.getElementById('imagen');
+    if (imagenVar==1){
+        Image.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/9/98/Hitori_Gotoh_Character_Design_2.png/revision/latest?cb=20220915114341";
+        
+    }
+    else if (imagenVar==2){
+        Image.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/a/a8/Ikuyo_Kita_Character_Design_2.png/revision/latest?cb=20220915114342";
+        
+    }else if (imagenVar==3){
+        image.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/9/92/Nijika_Ijichi_Character_Design_2.png/revision/latest?cb=20220915114343";
+        
+    }else if (imagenVar==4){
+        image.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/4/4a/Ryo_Yamada_Character_Design_2.png/revision/latest?cb=20220915114345";
+        
+    }
+    imagenVar++;
+}
+</script>
+<body>
+    <h1>Secuencia 4 imagenes</h1>
+    <img id="imagen" src="https://static.wikia.nocookie.net/bocchi-the-rock/images/9/98/Hitori_Gotoh_Character_Design_2.png/revision/latest?cb=20220915114341" alt="imagen1" width="200" height="200" onclick="cambiaImg">
+</body>
+</html>
