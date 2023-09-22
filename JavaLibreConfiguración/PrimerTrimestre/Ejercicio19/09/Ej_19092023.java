@@ -11,15 +11,23 @@ import java.util.Scanner;
 public class Ej_19092023{   
     public static Scanner entrada = new Scanner(System.in);
     public static void main(String[]args){
-    byte seleccion;
+    int seleccion;
     boolean salida=false;
         while (salida == false){
+            String cadena = pedirCadena();
             menu();
-            seleccion = entrada.nextByte();
+            seleccion = entrada.nextInt();
             switch(seleccion){
                 case 1:
-                    ;
+                System.out.println("La cadena: "+cadena+"al revés se leería:\n");               
+                System.out.println(invertirString(cadena)+"\n");
                 break;
+                case 2:
+                    System.out.println("La cadena cuenta con "+contarVocales(cadena)+" vocales");
+                    break;
+                case 3:
+                    System.out.println("La cadena cuenta con "+contarConsonantes(cadena)+" Consonantes");
+                    break;
                 case 0:
                     salida=true;
                 break;
@@ -30,6 +38,7 @@ public class Ej_19092023{
     public static String pedirCadena(){
         System.out.println("Por favor introduzca una cadena");
         String cadenaPedida = entrada.nextLine();
+        System.out.println();
         return cadenaPedida;
     }
     public static void menu(){
@@ -37,13 +46,41 @@ public class Ej_19092023{
         System.out.println("[1]Mostrar la cadena al revés\n[2]Contar el número de vocales\n[3]Contar el número de consonantes\n[4]Pasar cadena a minuscula\n[5]pasar cadena a mayuscula\n[6]Comprobar palindromo\n");
         System.out.println("[0]Salida");
     }
-    public static String alReves(String cadena){
-        String cadenaimportada=cadena; 
-        String cadenaReves="";
-            for (int i=cadenaimportada.length();i>-1;i++){
-                char caracter=cadenaimportada.charAt(i);
-                cadenaReves= cadenaReves+caracter;
+    public static String invertirString(String cadena) {
+        int longitud = cadena.length();
+        String cadenaInvertida = "";
+
+        for (int i = longitud - 1; i >= 0; i--) {
+            char caracter = cadena.charAt(i);
+            cadenaInvertida += caracter;
+        }
+
+        return cadenaInvertida;
+    }
+    public static int contarVocales(String cadena){
+        cadena = cadena.toLowerCase();
+        int numeroVocales = 0;
+        int longitud = cadena.length();
+        for(int i = longitud - 1; i >= 0; i--) {
+            char letra = cadena.charAt(i);
+            if(letra=='a' || letra=='e' ||letra=='i' ||letra=='o' ||letra=='u'){
+                numeroVocales++;
             }
-        return cadenaReves;
+        }
+        return numeroVocales; 
+    }
+    public static int contarConsonantes(String cadena) {
+        cadena = cadena.toLowerCase();
+        int numeroConsonantes = 0;
+        int longitud = cadena.length();
+        
+        for (int i = 0; i < longitud; i++) {
+            char letra = cadena.charAt(i);
+            if (letra >= 'a' && letra <= 'z' && letra != 'a' && letra != 'e' && letra != 'i' && letra != 'o' && letra != 'u') {
+                numeroConsonantes++;
+            }
+        }
+        
+        return numeroConsonantes;
     }
 }
