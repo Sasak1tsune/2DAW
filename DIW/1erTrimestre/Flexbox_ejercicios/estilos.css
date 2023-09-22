@@ -1,0 +1,76 @@
+.contenedor{
+    display: flex;
+}
+.caja {
+
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    color: black;
+}
+
+.caja1 {
+
+    background: rgb(26, 188, 156);
+    width: 100vh;
+    height: 10vh;
+    
+    
+}
+
+.caja2 {
+    background: rgb(52, 152, 219);
+    width: 100vh;
+    height: 10vh;
+}
+
+.caja3 {
+
+    background: rgb(155, 89, 182);
+    width: 100vh;
+    height: 10vh;
+}
+
+.caja4 {
+    background: rgb(52, 73, 94);       
+    width: 100vh;
+    height: 10vh;
+}
+
+.caja5 {
+    background: rgb(241, 196, 15);     
+    width: 100vh;
+    height: 10vh;
+}
+
+.caja6 {
+    background: rgb(230, 126, 34);       
+    width: 100vh;
+    height: 10vh;
+}
+
+.caja7 {
+    background: rgb(231, 76, 60);
+    width: 100vh;
+    height: 10vh;
+}
+
+.caja8 {
+
+    background: rgb(189, 195, 199);
+    width: 100vh;
+    height: 10vh;
+}
+
+.caja9 {
+
+    background: rgb(46, 204, 113);
+    width: 100vh;
+    height: 10vh;
+}
+.caja10 {
+
+    background: rgb(22, 160, 133);
+    width: 100vh;
+    height: 10vh;
+}

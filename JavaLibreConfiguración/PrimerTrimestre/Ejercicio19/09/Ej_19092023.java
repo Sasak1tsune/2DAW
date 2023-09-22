@@ -8,40 +8,40 @@
 */
 import java.util.Scanner;
 
-public class Ej_19092023{   
+public class Ej_19092023 {
     public static Scanner entrada = new Scanner(System.in);
-    public static void main(String[]args){
-    int seleccion;
-    boolean salida=false;
-        while (salida == false){
+    public static void main(String[] args) {
+        int seleccion;
+        boolean salida = false;
+        while (salida == false) {
             String cadena = pedirCadena();
             menu();
             seleccion = entrada.nextInt();
-            switch(seleccion){
+            switch (seleccion) {
                 case 1:
-                System.out.println("La cadena: "+cadena+"al revés se leería:\n");               
-                System.out.println(invertirString(cadena)+"\n");
-                break;
+                    System.out.println("La cadena: " + cadena + "al revés se leería:\n");
+                    System.out.println(invertirString(cadena) + "\n");
+                    break;
                 case 2:
-                    System.out.println("La cadena cuenta con "+contarVocales(cadena)+" vocales");
+                    System.out.println("La cadena cuenta con " + contarVocales(cadena) + " vocales");
                     break;
                 case 3:
-                    System.out.println("La cadena cuenta con "+contarConsonantes(cadena)+" Consonantes");
+                    System.out.println("La cadena cuenta con " + contarConsonantes(cadena) + " Consonantes");
                     break;
                 case 0:
-                    salida=true;
-                break;
+                    salida = true;
+                    break;
             }
         }
         System.out.println("auf wiedersehen");
     }
-    public static String pedirCadena(){
+    public static String pedirCadena() {
         System.out.println("Por favor introduzca una cadena");
         String cadenaPedida = entrada.nextLine();
         System.out.println();
         return cadenaPedida;
     }
-    public static void menu(){
+    public static void menu() {
         System.out.println("Bienvenido papu\nSelecciona tu magia:\n");
         System.out.println("[1]Mostrar la cadena al revés\n[2]Contar el número de vocales\n[3]Contar el número de consonantes\n[4]Pasar cadena a minuscula\n[5]pasar cadena a mayuscula\n[6]Comprobar palindromo\n");
         System.out.println("[0]Salida");
@@ -49,7 +49,6 @@ public class Ej_19092023{
     public static String invertirString(String cadena) {
         int longitud = cadena.length();
         String cadenaInvertida = "";
-
         for (int i = longitud - 1; i >= 0; i--) {
             char caracter = cadena.charAt(i);
             cadenaInvertida += caracter;
@@ -57,53 +56,42 @@ public class Ej_19092023{
 
         return cadenaInvertida;
     }
-    public static int contarVocales(String cadena){
+    public static int contarVocales(String cadena) {
         cadena = cadena.toLowerCase();
         int numeroVocales = 0;
         int longitud = cadena.length();
-        for(int i = longitud - 1; i >= 0; i--) {
+        for (int i = longitud - 1; i >= 0; i--) {
             char letra = cadena.charAt(i);
-            if(letra=='a' || letra=='e' ||letra=='i' ||letra=='o' ||letra=='u'){
+            if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
                 numeroVocales++;
             }
         }
-        return numeroVocales; 
+        return numeroVocales;
     }
     public static int contarConsonantes(String cadena) {
         cadena = cadena.toLowerCase();
         int numeroConsonantes = 0;
         int longitud = cadena.length();
-        
+
         for (int i = 0; i < longitud; i++) {
             char letra = cadena.charAt(i);
             if (letra >= 'a' && letra <= 'z' && letra != 'a' && letra != 'e' && letra != 'i' && letra != 'o' && letra != 'u') {
                 numeroConsonantes++;
             }
         }
-        
+
         return numeroConsonantes;
     }
-    public static String pasarMinuscula(String cadena){
+    public static String pasarMinuscula(String cadena) {
         cadena = cadena.toLowerCase();
         return cadena;
     }
-    public static String pasarMayuscula(String cadena){
+    public static String pasarMayuscula(String cadena) {
         cadena = cadena.toUpperCase();
         return cadena;
     }
-    public class Palindromo {
-        public static boolean esPalindromo(String cadena) {
-            // Eliminar espacios en blanco y convertir a minúsculas para hacer la comparación insensible a mayúsculas y minúsculas.
-            cadena = cadena.replaceAll("\\s+", "").toLowerCase();
-            
-            int longitud = cadena.length();
-            
-            for (int i = 0; i < longitud / 2; i++) {
-                if (cadena.charAt(i) != cadena.charAt(longitud - 1 - i)) {
-                    return false;
-                }
-            }
-            
-            return true;
-        }
+    public static boolean esPalindromo(String cadena) {
+        
+        return true;
+    }
 }
