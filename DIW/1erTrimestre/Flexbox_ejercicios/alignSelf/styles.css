@@ -1,0 +1,71 @@
+body{
+    margin: 0%;
+}
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    border: 10px solid ;
+}
+
+.caja {
+    width: 33%;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+.caja1 {
+    background: rgb(26, 188, 156);
+
+}
+
+.caja2 {
+    background: rgb(52, 152, 219);
+    padding-bottom: 50%;
+    align-self: stretch;
+}
+
+.caja3 {
+
+    background: rgb(155, 89, 182);
+
+}
+
+.caja4 {
+    background: rgb(52, 73, 94);
+
+}
+
+.caja5 {
+    background: rgb(241, 196, 15);
+
+}
+
+.caja6 {
+    background: rgb(230, 126, 34);
+    align-self: center;
+}
+
+.caja7 {
+    background: rgb(231, 76, 60);
+
+}
+
+.caja8 {
+
+    background: rgb(189, 195, 199);
+
+}
+
+.caja9 {
+
+    background: rgb(46, 204, 113);
+    align-self: flex-end;
+
+}
+
+.caja10 {
+
+    background: rgb(22, 160, 133);
+
+}

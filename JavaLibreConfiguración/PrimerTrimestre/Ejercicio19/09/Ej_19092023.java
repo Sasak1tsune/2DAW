@@ -90,7 +90,9 @@ public class Ej_19092023 {
         cadena = cadena.toUpperCase();
         return cadena;
     }
-    public static boolean esPalindromo(String cadena) {
+    public static boolean esPalindromo(String cadena, String cadenaInversa) {
+        cadena = cadena.strip();
+        cadenaInversa = cadenaInversa.strip();
         
         return true;
     }

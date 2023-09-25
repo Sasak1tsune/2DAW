@@ -1,0 +1,10 @@
+body{
+    background-image: linear-gradient(to right, rgb(236, 110, 173) , rgb(53, 147, 229));
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+.navBar{
+    
+}

@@ -1,0 +1,39 @@
+body{
+    margin: 0%;
+}
+.contenedor {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.caja {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: auto;
+}
+.caja1 {
+    background: rgb(26, 188, 156);
+}
+
+.caja2 {
+    background: rgb(52, 152, 219);
+}
+
+.caja3 {
+    background: rgb(155, 89, 182);
+}
+
+.caja4 {
+    background: rgb(52, 73, 94);
+    
+}
+
+.caja5 {
+    background: rgb(241, 196, 15);
+}
+
+.caja6 {
+    background: rgb(230, 126, 34);
+}

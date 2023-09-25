@@ -5,7 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
 </head>
+<script>
+    var preguntaUno = true;
+    var preguntaDos = false;
+    var preguntaTres = true;
+    var preguntaCuatro = true;
+    var preguntaCinco = true;
+    var preguntaSeis = true;
+    var preguntaSiete = true;
+
+    function checkAnswer(pregunta){
+        if (pregunta==true) {
+            colorearVerde();
+        } else {
+            colorearRojo();
+        }
+    }
+    function colorearVerde(){
+        var x = document.getElementById("boton");
+        x.style.color = "green";
+    }
+    function colorearRojo(){
+        var x = document.getElementById("boton");
+        x.style.color = "red";
+    }
+</script>
 <body>
-    <h1>Test de verdadero y false</h1>
+    <h1>Test de verdadero y falso</h1>
+    <p>¿El primer videojuego de la historia fue Pong?</p>
+    <button id="verdadero"></button>
+    <button id="false"></button>
+    <p>¿El videojuego más vendido de todos los tiempos es Minecraft?</p>
+    <p>¿El videojuego Fortnite fue lanzado en 2017?</p>
+    <p>¿El videojuego Pac-Man fue lanzado en 1980?</p>
+    <p>¿El videojuego Grand Theft Auto V fue lanzado en 2013?</p>
+    <p>¿El videojuego The Legend of Zelda: Ocarina of Time fue lanzado en 1998?</p>
+    <p>¿El videojuego Super Mario Bros. fue lanzado en 1985?</p>
 </body>
 </html>
