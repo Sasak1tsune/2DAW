@@ -5,7 +5,7 @@
 -pasar a minuscula
 -pasar a mayúsculas
 -decir si es palindromo
-*/
+Juan Pablo Perea Santos*/
 import java.util.Scanner;
 
 public class Ej_19092023 {
@@ -27,6 +27,12 @@ public class Ej_19092023 {
                     break;
                 case 3:
                     System.out.println("La cadena cuenta con " + contarConsonantes(cadena) + " Consonantes");
+                    break;
+                case 4:
+                    System.out.println(pasarMinuscula(cadena));
+                    break;
+                case 5:
+                    System.out.println(pasarMayuscula(cadena));
                     break;
                 case 6:
                     System.out.println(comprobarPalindromo(cadena));
@@ -94,7 +100,7 @@ public class Ej_19092023 {
         return cadena;
     }
     public static boolean comprobarPalindromo(String cadena) {
-        
+
         StringBuilder builder = new StringBuilder();
         builder.append(cadena);
         builder.reverse();
