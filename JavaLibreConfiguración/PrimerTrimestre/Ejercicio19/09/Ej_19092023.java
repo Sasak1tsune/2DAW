@@ -28,6 +28,9 @@ public class Ej_19092023 {
                 case 3:
                     System.out.println("La cadena cuenta con " + contarConsonantes(cadena) + " Consonantes");
                     break;
+                case 6:
+                    System.out.println(comprobarPalindromo(cadena));
+                    break;
                 case 0:
                     salida = true;
                     break;
@@ -90,10 +93,13 @@ public class Ej_19092023 {
         cadena = cadena.toUpperCase();
         return cadena;
     }
-    public static boolean esPalindromo(String cadena, String cadenaInversa) {
-        cadena = cadena.strip();
-        cadenaInversa = cadenaInversa.strip();
+    public static boolean comprobarPalindromo(String cadena) {
         
-        return true;
+        StringBuilder builder = new StringBuilder();
+        builder.append(cadena);
+        builder.reverse();
+        String invertido = builder.toString();
+        invertido.replaceAll(" ", "");
+        return cadena.equals(invertido);
     }
 }
