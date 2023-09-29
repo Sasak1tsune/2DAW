@@ -1,0 +1,9 @@
+a) Cuando los objetos String se comparan utilizando ==, el resultado es true si los objetos
+String contiene los mismos valores.
+
+Falso, cuando los objetos String se comparan utilizando ==, el resultado es true solo si las variables hacen referencia al mismo objeto String en la memoria.
+
+b) Un objeto String puede modificarse una vez creado.
+
+Falso, una vez creado, no se puede modificar.
+Sin embargo, se puede crear nuevos objetos String con modificaciones basadas en el objeto original, pero el objeto original permanecerá sin cambios.
