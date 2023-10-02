@@ -1,0 +1,43 @@
+*{
+    font-family: sans-serif;
+}
+.paginaCompleta{
+    
+    display: flex;
+    flex-direction: row;
+}
+.cajaLateral{
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    flex-wrap: wrap;
+    max-width: 15%;
+    min-width: 20%;
+}
+.cajaContenido{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: auto;
+    padding: 5%;
+}
+.articulo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+}
+.articuloContenido{
+    padding-left: 20px;
+}
+.articuloImagen{
+    display: flex;
+    height: 90px;
+    padding-right: 8px;
+}
+.subcajaLateral{
+    color: black;
+    display: flex;
+    padding-right: 2px;
+    flex-grow: auto;
+}

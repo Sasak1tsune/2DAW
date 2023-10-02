@@ -1,0 +1,24 @@
+.imagen{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 20px solid;
+    border-color: rgb(32, 111, 111);
+    padding: 20px;
+    background-color: rgb(255, 127, 80);   
+    min-width: 300px;
+    max-width: 1200px;
+    
+
+}
+.cajon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: aliceblue;
+    
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(222, 167, 195);
+}
