@@ -12,9 +12,9 @@ function comprobarNota(){
 }
 }
 function mostrarNota(nota){
-    if (nota<5){
-        alert("Reprobado");
-    }else{
+    if (nota>=5){
         alert("Aprobado");
+    }else{
+        alert("Reprobado");
     }
 }
