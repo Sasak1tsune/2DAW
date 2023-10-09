@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        var numeros = [];
-        var suma = 0;
-        var producto = 1;
         var numero;
+        var suma = 0;
+        var producto = 1; // Inicializado en 1 para no afectar la multiplicación inicial
+        var cantidadNumeros = 0;
 
         do {
             numero = parseInt(prompt("Ingrese un número (o 9999 para terminar):"));
-            
-            if (!isNaN(numero)) {
-                if (numero !== 9999) {
-                    numeros.push(numero);
-                    suma += numero;
-                    producto *= numero;
-                }
-            } else {
+
+            if (!isNaN(numero) && numero !== 9999) {
+                suma += numero;
+                producto *= numero;
+                cantidadNumeros++;
+            } else if (isNaN(numero)) {
                 alert("Por favor, ingrese un número válido.");
             }
         } while (numero !== 9999);
 
-        var cantidadNumeros = numeros.length;
-
         if (cantidadNumeros > 0) {
-            alert("Número de números introducidos (excluyendo 9999): " + cantidadNumeros);
+            alert("Cantidad de números introducidos (excluyendo 9999): " + cantidadNumeros);
             alert("Suma de los números introducidos (excluyendo 9999): " + suma);
             alert("Producto de los números introducidos (excluyendo 9999): " + producto);
         } else {
@@ -37,4 +35,5 @@
         }
     </script>
 </body>
+
 </html>
