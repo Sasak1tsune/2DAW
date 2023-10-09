@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario que ingrese un número
+        var numero = prompt("Ingrese un número:");
+        // Convertir la entrada del usuario a un número
+        numero = parseFloat(numero);
+
+        if (!isNaN(numero)) {
+            // Inicializar los contadores
+            var contador1 = numero + 5;
+            var contador2 = numero + 21;
+            var contador3 = numero - 4;
+
+            // Mostrar los resultados en líneas separadas
+            var resultados = "Número introducido: " + numero + "\n";
+            resultados += "Contador 1: " + contador1 + "\n";
+            resultados += "Contador 2: " + contador2 + "\n";
+            resultados += "Contador 3: " + contador3;
+
+            // Mostrar los resultados en un mensaje de alerta
+            alert(resultados);
+        } else {
+            // Mostrar un mensaje de error si el usuario no ingresó un número válido
+            alert("Por favor, ingrese un número válido.");
+        }
+    </script>
+</body>
+</html>

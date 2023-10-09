@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario que ingrese un número entero
+        var numeroDecimal = parseInt(prompt("Ingrese un número entero:"));
+
+        // Verificar si el usuario ingresó un número válido
+        if (!isNaN(numeroDecimal)) {
+            // Convertir el número a base 16 (hexadecimal)
+            var numeroHexadecimal = numeroDecimal.toString(16);
+
+            // Convertir el número a base 5
+            var numeroBase5 = convertirBase5(numeroDecimal);
+
+            // Mostrar los resultados
+            alert("Número en base 16 (hexadecimal): " + numeroHexadecimal.toUpperCase() + "\nNúmero en base 5: " + numeroBase5);
+        } else {
+            // Mostrar un mensaje de error si el usuario no ingresó un número válido
+            alert("Por favor, ingrese un número entero válido.");
+        }
+
+        // Función para convertir a base 5
+        function convertirBase5(decimal) {
+            var resultado = '';
+            while (decimal > 0) {
+                resultado = (decimal % 5) + resultado;
+                decimal = Math.floor(decimal / 5);
+            }
+            return resultado;
+        }
+    </script>
+</body>
+</html>

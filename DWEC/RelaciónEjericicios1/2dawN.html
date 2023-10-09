@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numeros = [];
+        var suma = 0;
+        var numero;
+
+        do {
+            numero = parseInt(prompt("Ingrese un número (o 9999 para terminar):"));
+            
+            if (!isNaN(numero)) {
+                if (numero !== 9999) {
+                    numeros.push(numero);
+                    suma += numero;
+                }
+            } else {
+                alert("Por favor, ingrese un número válido.");
+            }
+        } while (numero !== 9999);
+
+        var cantidadNumeros = numeros.length;
+
+        if (cantidadNumeros > 0) {
+            alert("Número de números introducidos (excluyendo 9999): " + cantidadNumeros);
+            alert("Suma de los números introducidos (excluyendo 9999): " + suma);
+        } else {
+            alert("No se introdujeron números válidos antes de 9999.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*El bucle for se inicializa correctamente con var i = -2.
+            Se utilizan ; en lugar de : en la declaración del for.
+            Se agregan llaves {} para delimitar el cuerpo del bucle for y las condiciones if.*/
+        var fahrenheit, celsius;
+        var s = "";
+        
+        for (var i = -2; i <= 12; i++) {
+            celsius = 10 * i;
+            fahrenheit = 32 + (celsius * 9) / 5;
+            s = s + "C= " + celsius + " F= " + fahrenheit + "\n";
+            
+            if (celsius === 0) {
+                s = s + "Punto de Congelación del Agua\n";
+            }
+            
+            if (celsius === 100) {
+                s = s + "Punto de Ebullición del Agua\n";
+            }
+        }
+        
+        alert(s);
+    </script>
+</body>
+</html>

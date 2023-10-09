@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario que ingrese un número en base octal
+        var numeroOctal = prompt("Ingrese un número en base octal:");
+            // Convertir el número octal a decimal
+            var numeroDecimal = parseInt(numeroOctal, 8);
+            // Convertir el número decimal a binario
+            var numeroBinario = numeroDecimal.toString(2);
+            // Mostrar los resultados
+            alert("Número en base decimal: " + numeroDecimal + "\nNúmero en base 2: " + numeroBinario);
+        
+    </script>
+</body>
+</html>

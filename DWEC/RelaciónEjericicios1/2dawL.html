@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var volverEmpezar = true;
+
+        while (volverEmpezar) {
+            // Solicitar al usuario que ingrese dos números positivos menores de 57
+            var numero1 = parseInt(prompt("Ingrese el primer número positivo menor de 57:"));
+            var numero2 = parseInt(prompt("Ingrese el segundo número positivo menor de 57:"));
+
+            // Verificar si los números ingresados son positivos y menores de 57
+            if (!isNaN(numero1) && !isNaN(numero2) && numero1 > 0 && numero2 > 0 && numero1 < 57 && numero2 < 57) {
+                // Calcular el producto de los dos números
+                var producto = numero1 * numero2;
+
+                // Mostrar el resultado
+                alert("El producto de " + numero1 + " y " + numero2 + " es " + producto);
+            } else {
+                // Mostrar un mensaje de error si los números no cumplen con los requisitos
+                alert("Por favor, ingrese dos números positivos menores de 57.");
+            }
+
+            // Preguntar al usuario si quiere volver a empezar
+            var respuesta = prompt("¿Desea volver a empezar? (Sí/No)").toLowerCase();
+
+            // Verificar la respuesta del usuario
+            if (respuesta !== "si") {
+                volverEmpezar = false;
+            }
+        }
+    </script>
+</body>
+</html>
