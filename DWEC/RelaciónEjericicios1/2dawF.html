@@ -7,26 +7,19 @@
 </head>
 <body>
     <script>
-        // Solicitar al usuario que ingrese el radio del círculo
         var radio = prompt("Ingrese el radio del círculo:");
 
-        // Convertir la entrada del usuario a un número
         radio = parseFloat(radio);
 
-        // Verificar si el usuario ingresó un número válido
         if (!isNaN(radio) && radio > 0) {
             // Calcular la longitud de la circunferencia
             var longitudCircunferencia = 2 * Math.PI * radio;
-
             // Calcular el área del círculo
             var areaCirculo = Math.PI * Math.pow(radio, 2);
-
-            // Mostrar los resultados en un mensaje de alerta
             //El método toFixed(2) formatea un número usando notación de punto fijo
             alert("Longitud de la circunferencia = " + longitudCircunferencia.toFixed(2) + "\nÁrea del círculo = " + areaCirculo.toFixed(2));
         } else {
-            // Mostrar un mensaje de error si el usuario no ingresó un número válido o un número mayor que cero
-            alert("Por favor, ingrese un radio válido mayor que cero.");
+            alert("Ingrese un numero valido como radio");
         }
     </script>
 </body>

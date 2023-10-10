@@ -9,28 +9,20 @@
 
 <body>
     <script>
-        function main(){
         // Pedir al usuario que ingrese un número
         var numero = prompt("Por favor, ingrese un número:");
-
         // Convertir la entrada del usuario a un número
         numero = parseFloat(numero);
-
         // Verificar si el usuario ingresó un número válido
         if (!isNaN(numero)) {
             // Calcular el doble, el triple y el cuádruple del número
             var doble = numero * 2;
             var triple = numero * 3;
             var cuadruple = numero * 4;
-
-            // Mostrar los resultados en un único "alert"
             alert("El doble de " + numero + " es " + doble + "\nEl triple de " + numero + " es " + triple + "\nEl cuádruple de " + numero + " es " + cuadruple);
         } else {
-            // Mostrar un mensaje de error si el usuario no ingresó un número válido
             alert("Por favor, ingrese un número válido.");
         }
-    }
-        main();
     </script>
 </body>
 

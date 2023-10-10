@@ -1,0 +1,44 @@
+.cabecera{
+    display: flex;
+    justify-content: center;
+}
+.cajaVerde{
+    background: greenyellow;
+    width: 100%;
+}
+.cajaMagen{
+    background: magenta;
+    width: 100%;
+}
+.cajaAmarilla{
+    background: yellow;
+    width: 100%;
+}
+.cajaAzul{
+    background: blue;
+    width: 100%;
+}
+@media only screen and (max-width: 568px){
+
+    .cajaVerde{
+        background: greenyellow;
+        width: 100%;
+    }
+    .cajaMagen{
+        background: magenta;
+        width: 100%;
+    }
+    .cajaAmarilla{
+        background: yellow;
+        width: 25%;
+    }
+    .cajaAzul{
+        background: blue;
+        width: 75%;
+    }
+    .row{
+        display: flex; 
+        flex-wrap: wrap;
+        width: 100%;
+     }
+}
