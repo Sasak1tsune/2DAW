@@ -1,0 +1,24 @@
+.cajaAzulOs{
+    width: 100%;
+    background-color: rgb(42, 73, 117);
+}
+.cajaAzulClar{
+    width: 100%;
+    background-color: rgb(62, 159, 189);
+}
+.cajaVerde{
+    width: 100%;
+    background-color: rgb(59, 126, 78);
+}
+.cajaRoja{
+    width: 50%;
+    background-color: rgb(217, 69, 79);
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+.subcontenedor{
+    display: flex;
+    flex-wrap: wrap;
+}

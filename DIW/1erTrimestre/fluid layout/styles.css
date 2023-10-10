@@ -1,0 +1,78 @@
+.cajaAzulOs{
+    width: 100%;
+    background-color: rgb(42, 73, 117);
+}
+.cajaAzulClar{
+    width: 50%;
+    background-color: rgb(62, 159, 189);
+}
+.cajaVerde{
+    width: 50%;
+    background-color: rgb(59, 126, 78);
+}
+.cajaRoja{
+    width: 100%;
+    background-color: rgb(217, 69, 79);
+}
+.cajaAmarilla{
+    width: 100%;
+    background-color: rgb(230, 152, 77);
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (min-width: 550px){
+    .cajaAzulOs{
+        width: 100%;
+        background-color: rgb(42, 73, 117);
+    }
+    .cajaAzulClar{
+        width: 50%;
+        background-color: rgb(62, 159, 189);
+    }
+    .cajaVerde{
+        width: 50%;
+        background-color: rgb(59, 126, 78);
+    }
+    .cajaRoja{
+        width: 35%;
+        background-color: rgb(217, 69, 79);
+    }
+    .cajaAmarilla{
+        width: 75%;
+        background-color: rgb(230, 152, 77);
+    }
+    .contenedor{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+@media only screen and (min-width: 800px){
+    .cajaAzulOs{
+        width: 100%;
+        background-color: rgb(42, 73, 117);
+    }
+    .cajaAzulClar{
+        width: 50%;
+        background-color: rgb(62, 159, 189);
+    }
+    .cajaVerde{
+        width: 50%;
+        background-color: rgb(59, 126, 78);
+    }
+    .cajaRoja{
+        width: 35%;
+        background-color: rgb(217, 69, 79);
+    }
+    .cajaAmarilla{
+        width: 75%;
+        background-color: rgb(230, 152, 77);
+    }
+    .contenedor{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+}
