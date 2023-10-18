@@ -15,7 +15,7 @@
         var cantidadNumeros = 0;
 
         do {
-            numero = parseInt(prompt("Ingrese un número (o 9999 para terminar):"));
+            numero = parseInt(prompt("Ingrese un número o ingrese 9999 para finalizar:"));
 
             if (!isNaN(numero) && numero !== 9999) {
                 suma += numero;
@@ -27,11 +27,11 @@
         } while (numero !== 9999);
 
         if (cantidadNumeros > 0) {
-            alert("Cantidad de números introducidos (excluyendo 9999): " + cantidadNumeros);
-            alert("Suma de los números introducidos (excluyendo 9999): " + suma);
-            alert("Producto de los números introducidos (excluyendo 9999): " + producto);
+            alert("Cuantos numeros introducidos: " + cantidadNumeros);
+            alert("Suma: " + suma);
+            alert("Producto: " + producto);
         } else {
-            alert("No se introdujeron números válidos antes de 9999.");
+            alert("No se ha introducido ningún numero valido");
         }
     </script>
 </body>
