@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///C:/Users/juanp/Downloads/rombo.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Ejercicio Rombo</title>
+</head>
+
+<body>
+    <div id="caja">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br>&nbsp;&nbsp;&nbsp;&nbsp;***<br>&nbsp;&nbsp;*****<br>*******<br>&nbsp;&nbsp;*****<br>&nbsp;&nbsp;&nbsp;&nbsp;***<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br></div>
+    <script>
+        var caja = document.getElementById("caja");
+        var limite = 4;
+        //Creciente
+        for (var i = 0; i < limite; i++) {
+            var asterisco = "";
+            var espacioHTML = "";
+            for (var k = 0; k < limite - i - 1; k++) {
+                espacioHTML += "&nbsp&nbsp";
+            }
+            for (var j = 1; j <= 2 * i + 1; j++) {
+                asterisco += "*";
+            }
+            caja.innerHTML = caja.innerHTML + espacioHTML + asterisco + "<br>";
+        }
+        //Decreciente
+        for (var i = limite - 2; i >= 0; i--) {
+            var asterisco = "";
+            var espacioHTML = "";
+            for (var k = 0; k < limite - i - 1; k++) {
+                espacioHTML += "&nbsp&nbsp";
+            }
+            for (var j = 1; j <= 2 * i + 1; j++) {
+                asterisco += "*";
+            }
+            caja.innerHTML = caja.innerHTML + espacioHTML + asterisco + "<br>";
+        }
+    </script>
+
+
+</body></html>

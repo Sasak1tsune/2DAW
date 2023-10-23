@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio Rombo</title>
+</head>
+
+<body>
+    <div id="caja"></div>
+    <script>
+        var caja = document.getElementById("caja");
+        var limite = 4;
+        //Creciente
+        for (var i = 0; i < limite; i++) {
+            var asterisco = ""; // Inicializa una cadena vacía para almacenar los asteriscos
+            var espacioHTML = ""; // Inicializa una cadena vacía para almacenar espacios en formato HTML
+            for (var k = 0; k < limite - i - 1; k++) {
+                espacioHTML +=
+                    "&nbsp;&nbsp;"; // Agrega dos espacios HTML por cada iteración para crear un margen a la izquierda
+            }
+            for (var j = 1; j <= 2 * i + 1; j++) {
+                asterisco += "*"; // Agrega asteriscos para formar una fila de asteriscos
+            }
+            caja.innerHTML = caja.innerHTML + espacioHTML + asterisco +
+                "<br>"; // Agrega la fila al elemento HTML con un salto de línea
+        }
+
+        // Decreciente
+        for (var i = limite - 2; i >= 0; i--) {
+            var asterisco = ""; // Inicializa una cadena vacía para almacenar los asteriscos
+            var espacioHTML = ""; // Inicializa una cadena vacía para almacenar espacios en formato HTML
+            for (var k = 0; k < limite - i - 1; k++) {
+                espacioHTML +=
+                    "&nbsp;&nbsp;"; // Agrega dos espacios HTML por cada iteración para crear un margen a la izquierda
+            }
+            for (var j = 1; j <= 2 * i + 1; j++) {
+                asterisco += "*"; // Agrega asteriscos para formar una fila de asteriscos
+            }
+            caja.innerHTML = caja.innerHTML + espacioHTML + asterisco +
+                "<br>"; // Agrega la fila al elemento HTML con un salto de línea
+        }
+        /*        
+                Obtener el elemento HTML con el id "caja"
+        Establecer un límite a 4
+        Para i desde 0 hasta (límite - 1) Hacer
+            Inicializar una cadena de asteriscos vacía
+            Inicializar una cadena de espacios en formato HTML vacía
+            Para k desde 0 hasta (límite - i - 2) Hacer
+                Agregar dos espacios HTML a la cadena de espacios
+            Fin Para
+            Para j desde 1 hasta (2 * i + 1) Hacer
+                Agregar un asterisco a la cadena de asteriscos
+            Fin Para
+            Agregar la cadena de espacios seguida de la cadena de asteriscos y un salto de línea al elemento HTML "caja"
+        Fin Para
+
+        Para i desde (límite - 2) hasta 0 Hacer
+            Inicializar una cadena de asteriscos vacía
+            Inicializar una cadena de espacios en formato HTML vacía
+            Para k desde 0 hasta (límite - i - 2) Hacer
+                Agregar dos espacios HTML a la cadena de espacios
+            Fin Para
+            Para j desde 1 hasta (2 * i + 1) Hacer
+                Agregar un asterisco a la cadena de asteriscos
+            Fin Para
+            Agregar la cadena de espacios seguida de la cadena de asteriscos y un salto de línea al elemento HTML "caja"
+        Fin Para
+                */
+    </script>
+</body>
+
+</html>
