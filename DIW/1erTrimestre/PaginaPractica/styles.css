@@ -1,0 +1,35 @@
+.custom-navbar {
+    background-color: #f25f8e;
+}
+
+.titulo {
+    font-size: 24pt;
+    padding-top: 60px;
+    padding-right: 15px;
+    font-weight: bold;
+    color: #f35387;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+.texto{
+    color: antiquewhite;
+}
+.fondo{
+    background: linear-gradient(137deg, rgba(0,0,0,1) 0%, rgba(138,138,138,1) 35%, rgba(237,237,237,1) 100%);
+}
+
+body{
+    background: #ebebeb;
+}
+
+a{
+    text-decoration: none;
+}
+.enlace{
+    font-size: 24pt;
+    padding-top: 30px;
+    padding-right: 15px;
+    font-weight: bold;
+    color: #7ecac8;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
