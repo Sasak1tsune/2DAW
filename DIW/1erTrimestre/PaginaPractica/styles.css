@@ -12,6 +12,7 @@
 }
 
 .texto{
+    
     color: antiquewhite;
 }
 .fondo{
@@ -27,7 +28,7 @@ a{
 }
 .enlace{
     font-size: 24pt;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-right: 15px;
     font-weight: bold;
     color: #7ecac8;
