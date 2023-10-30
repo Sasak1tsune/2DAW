@@ -66,6 +66,64 @@ function ejercicio62() {
     }
 }
 
+function ejercicio71(){
+    var numero1 = prompt("Inserte el primer número");
+    numero1 = esNumero(numero1);
+    var numero2 = prompt("Inserte el segundo número");
+    numero2 = esNumero(numero2);
+
+    if(numero1>numero2){
+        alert("La suma de los dos numeros es: "+(numero1+numero2)+" y la diferencia entre ellos es "+(numero1-numero2));
+    } else if (numero1<numero2){
+        alert("El producto de los dos numeros es"+(numero1*numero2)+" y la division del primero respecto al segundo es: "+(numero1/numero2));
+    } else {
+        alert("Los numeros son iguales");
+    }
+}
+
+function ejercicio72() {
+    var nota1, nota2, nota3, resultado, suma;
+    nota1 = prompt("Ingrese la nota número 1");
+    nota1 = esNumero(nota1);
+    nota2 = prompt("Ingrese la nota número 2");
+    nota2 = esNumero(nota2);
+    nota3 = prompt("Ingrese la nota número 3");
+    nota3 = esNumero(nota3);
+    suma = nota1 + nota2 + nota3;
+    resultado = suma / 3;
+    if (resultado >= 4) {
+        alert("regular");
+    } else {
+        alert("reprobado");
+    }
+}
+
+function determinarDigitos(numero) {
+    // Convierte el número a una cadena de caracteres
+    const numeroTexto = numero.toString();
+  
+    if (numeroTexto.length === 1) {
+      return "El número tiene un dígito.";
+    } else if (numeroTexto.length === 2) {
+      return "El número tiene dos dígitos.";
+    } else {
+      return "El número no es válido. Debe ser un número positivo de uno o dos dígitos.";
+    }
+  }
+  function ejercicio73(){
+    // Solicitar al usuario que ingrese un número
+  var numeroIngresado = prompt("Ingrese un número positivo de 1 a 99:");
+  
+  // Convertir el número ingresado a entero
+  var numeroEntero = parseInt(numeroIngresado);
+  
+  // Verificar si el número tiene uno o dos dígitos
+  var resultado = determinarDigitos(numeroEntero);
+  
+  // Mostrar el resultado
+  alert(resultado);
+  }
+
 function esNumero(numero) {
     if (!isNaN(numero)) {
         numero = parseFloat(numero);

@@ -34,3 +34,18 @@ a{
     color: #7ecac8;
     text-shadow: 0 1px 5px rgba(0,0,0,0.3);
 }
+footer{
+    background: #666;
+    color: #e0e0e0;
+    padding: 40px 0 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.custom-carousel {
+    min-height: 25vh; /* Altura mínima del 25% de la ventana gráfica */
+    max-height: 30vh; /* Altura máxima del 30% de la ventana gráfica */
+}
+.carousel-control-prev, .carousel-control-next {
+    color: black;
+}
