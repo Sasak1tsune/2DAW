@@ -7,7 +7,7 @@
     padding-top: 60px;
     padding-right: 15px;
     font-weight: bold;
-    color: #f35387;
+    color: var(--color_rosa);
     text-shadow: 0 1px 5px rgba(0,0,0,0.3);
 }
 
@@ -16,7 +16,7 @@
     color: antiquewhite;
 }
 .fondo{
-    background: linear-gradient(137deg, rgba(0,0,0,1) 0%, rgba(138,138,138,1) 35%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(138,138,138,1) 85%, rgba(237,237,237,1) 100%);
 }
 
 body{
@@ -27,25 +27,51 @@ a{
     text-decoration: none;
 }
 .enlace{
-    font-size: 24pt;
-    padding-top: 10px;
+    font-size: 18pt;
     padding-right: 15px;
     font-weight: bold;
-    color: #7ecac8;
+    color: var(--color_azul);
+    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+.enlace :hover{
+    font-size: 18pt;
+    padding-right: 15px;
+    font-weight: bold;
+    color: var(--color_rosa);
     text-shadow: 0 1px 5px rgba(0,0,0,0.3);
 }
 footer{
-    background: #666;
-    color: #e0e0e0;
-    padding: 40px 0 0;
-    position: absolute;
-    bottom: 0;
+    padding: 3px;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    text-align: center;
+}
+.card img {
     width: 100%;
+    height: 200px; /* Ajusta la altura como desees */
+    object-fit: cover; /* Para ajustar la imagen al contenedor manteniendo la relación de aspecto */
 }
-.custom-carousel {
-    min-height: 25vh; /* Altura mínima del 25% de la ventana gráfica */
-    max-height: 30vh; /* Altura máxima del 30% de la ventana gráfica */
+.imagen-personaje{
+    max-height: 500px;
 }
-.carousel-control-prev, .carousel-control-next {
-    color: black;
+.carta-info{
+    .max-size {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+.info-producto{
+    list-style: none;
+}
+
+:root{
+    --color_azul: #039db4;
+    --color_rosa: #f35387;;
+}
+/*El media se utiliza para que se represente correctamente la imagen en un samsung galaxy*/
+@media (max-width: 280px){
+    .imagen-personaje{
+        max-height: 400px;
+    }
 }
