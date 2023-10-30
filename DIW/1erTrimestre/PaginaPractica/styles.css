@@ -8,62 +8,61 @@
     padding-right: 15px;
     font-weight: bold;
     color: var(--color_rosa);
-    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
-.texto{
+.texto {
     color: antiquewhite;
 }
-.fondo{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(138,138,138,1) 85%, rgba(237,237,237,1) 100%);
+
+.fondo {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(138, 138, 138, 1) 85%, rgba(237, 237, 237, 1) 100%);
 }
 
-body{
+body {
     background: #ebebeb;
 }
 
-a{
+a {
     text-decoration: none;
 }
-.enlace{
+
+.enlace {
     font-size: 18pt;
     padding-right: 15px;
     font-weight: bold;
     color: var(--color_azul);
-    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
-}
-.enlace :hover{
-    font-size: 18pt;
-    padding-right: 15px;
-    font-weight: bold;
-    color: var(--color_rosa);
-    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
     width: 100%;
-    height: 200px; /* Ajusta la altura como desees */
-    object-fit: cover; /* Para ajustar la imagen al contenedor manteniendo la relación de aspecto */
+    height: 200px;
+    object-fit: cover;
 }
-.imagen-personaje{
+
+.card-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.imagen-personaje {
     max-height: 500px;
     display: block;
     margin: 0 auto;
-    
-}
-.logo img {
-    width: 100%;
-    height: 120px;
+
 }
 
-.carta-info{
+.carta-info {
     .max-size {
         max-width: 100px;
         max-height: 100px;
     }
 }
 
-.info-producto{
+.info-producto {
     list-style: none;
 }
 
@@ -75,14 +74,14 @@ a{
     color: var(--color_rosa);
 }
 
-
-:root{
-    --color_azul: #039db4;
-    --color_rosa: #f35387;
-}
 /*El media se utiliza para que se represente correctamente la imagen en un samsung galaxy*/
-@media (max-width: 280px){
-    .imagen-personaje{
+@media (max-width: 280px) {
+    .imagen-personaje {
         max-height: 400px;
     }
+}
+
+:root {
+    --color_azul: #039db4;
+    --color_rosa: #f35387;
 }
