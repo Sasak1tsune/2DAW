@@ -21,6 +21,7 @@
 
 body {
     background: #ebebeb;
+    min-height: 100vh;
 }
 
 a {
@@ -76,8 +77,12 @@ a {
 
 footer {
     padding: 3px;
-    color: var(--color_rosa);
+    color: white;
     text-align: center;
+}
+
+footer b{
+    color: var(--color_rosa);
 }
 
 :root {
