@@ -74,14 +74,20 @@ a {
     color: var(--color_rosa);
 }
 
-/*El media se utiliza para que se represente correctamente la imagen en un samsung galaxy*/
-@media (max-width: 280px) {
-    .imagen-personaje {
-        max-height: 400px;
-    }
+footer {
+    padding: 3px;
+    color: var(--color_rosa);
+    text-align: center;
 }
 
 :root {
     --color_azul: #039db4;
     --color_rosa: #f35387;
+}
+
+/*El media se utiliza para que se represente correctamente la imagen en un samsung galaxy*/
+@media (max-width: 280px) {
+    .imagen-personaje {
+        max-height: 400px;
+    }
 }
