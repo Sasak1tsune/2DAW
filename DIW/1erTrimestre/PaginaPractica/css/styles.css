@@ -20,7 +20,7 @@
 }
 
 body {
-    background: #ebebeb;
+    background: var(--color-fondo);
     min-height: 100vh;
 }
 
@@ -39,13 +39,15 @@ a {
 .card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .card-info img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: 0 auto;
 }
 
@@ -56,23 +58,22 @@ a {
 
 }
 
-.carta-info {
+.soft-info {
     .max-size {
         max-width: 100px;
         max-height: 100px;
     }
 }
 
-.info-producto {
-    list-style: none;
-}
-
-.carta-info li:nth-child(even) {
+.soft-info li:nth-child(even) {
     color: var(--color_azul);
 }
 
-.carta-info li:nth-child(odd) {
+.soft-info li:nth-child(odd) {
     color: var(--color_rosa);
+}
+.info-producto {
+    list-style: none;
 }
 
 footer {
@@ -88,6 +89,7 @@ footer b{
 :root {
     --color_azul: #039db4;
     --color_rosa: #f35387;
+    --color-fondo: #ebebeb;
 }
 
 /*El media se utiliza para que se represente correctamente la imagen en un samsung galaxy*/
