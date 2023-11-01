@@ -58,12 +58,6 @@ a {
 
 }
 
-.soft-info {
-    .max-size {
-        max-width: 100px;
-        max-height: 100px;
-    }
-}
 
 .soft-info li:nth-child(even) {
     color: var(--color_azul);
