@@ -80,6 +80,10 @@ footer b{
     color: var(--color_rosa);
 }
 
+a:visited{
+    text-decoration: none;
+}
+
 :root {
     --color_azul: #039db4;
     --color_rosa: #f35387;
