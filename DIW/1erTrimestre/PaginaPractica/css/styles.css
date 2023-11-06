@@ -1,7 +1,6 @@
 .custom-navbar {
     background-color: var(--color_rosa);
 }
-
 .titulo {
     font-size: 24pt;
     padding-top: 60px;
@@ -10,24 +9,12 @@
     color: var(--color_rosa);
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
-
 .texto {
     color: antiquewhite;
 }
-
 .fondo {
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(138, 138, 138, 1) 85%, rgba(237, 237, 237, 1) 100%);
 }
-
-body {
-    background: var(--color-fondo);
-    min-height: 100vh;
-}
-
-a {
-    text-decoration: none;
-}
-
 .enlace {
     font-size: 18pt;
     padding-right: 15px;
@@ -35,61 +22,74 @@ a {
     color: var(--color_azul);
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
-
 .card img {
     width: 100%;
     height: 200px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
-
 .card-info img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     margin: 0 auto;
 }
-
 .imagen-personaje {
     max-height: 500px;
     display: block;
     margin: 0 auto;
-
 }
-
-
 .soft-info li:nth-child(even) {
     color: var(--color_azul);
 }
-
 .soft-info li:nth-child(odd) {
     color: var(--color_rosa);
 }
 .info-producto {
     list-style: none;
 }
-
+body {
+    background: var(--color-fondo);
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
 footer {
     padding: 3px;
     color: white;
     text-align: center;
 }
-
-footer b{
+footer b {
     color: var(--color_rosa);
 }
-
-a:visited{
+a:visited {
     text-decoration: none;
 }
+/*Animaciones*/
 
+.jump-hover:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05);
+}
+.fade-in {
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*Root y media*/
 :root {
     --color_azul: #039db4;
     --color_rosa: #f35387;
     --color-fondo: #ebebeb;
 }
-
 /*El media se utiliza para que se represente correctamente la imagen en un samsung galaxy*/
 @media (max-width: 280px) {
     .imagen-personaje {
