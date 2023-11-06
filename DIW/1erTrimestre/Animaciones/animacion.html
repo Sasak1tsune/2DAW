@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion</title>
+</head>
+
+<body>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .fondo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .pato {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 20px;
+            left: -200px;
+            animation: mover 6s linear infinite;
+        }
+
+        .pato-peque img {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 200px;
+            left: -200px;
+            animation: mover 5s linear infinite;
+        }
+
+        .pato-diag {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            animation: mover-diag 5s linear infinite;
+            transform: rotateX(180deg);
+        }
+
+
+        .crosshair img {
+            height: 100px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            animation: mover-crosshair 5s linear infinite;
+        }
+
+        @keyframes mover {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(2600px);
+            }
+        }
+
+        @keyframes mover-diag {
+            from {
+                transform: translateX(-100px) translateY(-100px);
+            }
+
+            to {
+                transform: translateX(1920px) translateY(1200px);
+                
+
+            }
+        }
+
+        @keyframes mover-crosshair {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(2200px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+    </style>
+    <main>
+        <div>
+            <img class="fondo"
+                src="https://wallup.net/wp-content/uploads/2016/12/08/215115-Duck_Hunt-8-bit-Nintendo_Entertainment_System-dog.jpg"
+                alt="">
+            <div class="pato-diag">
+                <img src="https://i.pinimg.com/originals/85/00/3b/85003b8e414d2708f18fcb0fd1ccecf0.png" alt="">
+            </div>
+            <div class="pato-peque">
+                <img src="https://i.pinimg.com/originals/85/00/3b/85003b8e414d2708f18fcb0fd1ccecf0.png" alt="">
+            </div>
+            <div class="pato">
+                <img src="https://i.pinimg.com/originals/85/00/3b/85003b8e414d2708f18fcb0fd1ccecf0.png" alt="">
+            </div>
+
+            <div class="crosshair">
+                <img src="https://th.bing.com/th/id/R.08109a2503aa487c0f666926e1664eb8?rik=AMXH8U2ospvDHw&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fyck%2fa5q%2fycka5qpgi.png&ehk=dX1vjf0kWfbsItoBLPRccZR1CZgAelYAnE9dNcYxan0%3d&risl=&pid=ImgRaw&r=0"
+                    alt="">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
