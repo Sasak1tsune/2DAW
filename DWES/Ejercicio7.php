@@ -7,6 +7,9 @@
 </head>
 <body>
     <?php
+        $cadena = "Bien venido a nuestro cine. Ha efectuado usted la decisión correcta.";
+        echo $cadena;
+        
     ?>
 </body>
 </html>
