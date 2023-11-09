@@ -5,35 +5,57 @@
 </head>
 
 <body>
-    <div id="caja">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br>&nbsp;&nbsp;&nbsp;&nbsp;***<br>&nbsp;&nbsp;*****<br>*******<br>&nbsp;&nbsp;*****<br>&nbsp;&nbsp;&nbsp;&nbsp;***<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br></div>
-    <script>
+    <div id="caja"></div>
+
+<script>
         var caja = document.getElementById("caja");
         var limite = 4;
-        //Creciente
+        var patron = "";
+
+        // Creciente
         for (var i = 0; i < limite; i++) {
             var asterisco = "";
             var espacioHTML = "";
+
+            // Añadir espacios
             for (var k = 0; k < limite - i - 1; k++) {
-                espacioHTML += "&nbsp&nbsp";
+                espacioHTML += "&nbsp;&nbsp;";
             }
+
+            // Añadir asteriscos
             for (var j = 1; j <= 2 * i + 1; j++) {
                 asterisco += "*";
             }
-            caja.innerHTML = caja.innerHTML + espacioHTML + asterisco + "<br>";
+
+            // Crear línea del patrón
+            patron += espacioHTML + asterisco + "<br>";
+            caja.innerHTML = patron;
         }
-        //Decreciente
+
+        // Decreciente
         for (var i = limite - 2; i >= 0; i--) {
             var asterisco = "";
             var espacioHTML = "";
+
+            // Añadir espacios
             for (var k = 0; k < limite - i - 1; k++) {
-                espacioHTML += "&nbsp&nbsp";
+                espacioHTML += "&nbsp;&nbsp;";
             }
+
+            // Añadir asteriscos
             for (var j = 1; j <= 2 * i + 1; j++) {
                 asterisco += "*";
             }
-            caja.innerHTML = caja.innerHTML + espacioHTML + asterisco + "<br>";
+
+            // Crear línea del patrón
+            patron += espacioHTML + asterisco + "<br>";
+            caja.innerHTML = patron;
         }
-    </script>
+
+        // Mostrar el patrón en el elemento "caja"
+        caja.innerHTML = patron;
+</script>
+
 
 
 </body></html>
