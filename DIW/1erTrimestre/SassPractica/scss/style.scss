@@ -1,0 +1,10 @@
+$color-fondo: #EEE0CB;
+$color-texto: black;
+$color-azulCam: #839788;
+$fuente-principal: Sans-serif, "Helvetica Neue", Helvetica;
+*{
+    background-color: $color-fondo;
+    padding: 0;
+    margin: 0;
+    font-family: $fuente-principal;
+}
