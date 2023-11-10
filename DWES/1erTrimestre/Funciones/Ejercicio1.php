@@ -8,17 +8,24 @@
 <body>
     <?php
     function calculaCantidad($anhos, $dinero, $interes){
-        
+        if($anhos < 1){
+            return $dinero;
+        }else{
+            $valorAgregado = $dinero * $interes;
+            $dinero = $dinero + $valorAgregado;
+            $anhos--;
+        }
+        return $dinero;
     }
-    $interes=5;
-    echo "<p><b>El interés actual es $interes%.</b></p>" ;
-    echo " <p>Si usted deposita 100 &#x20AC; hoy, sus ahorros crecerán a " ;
-    echo calculaCantidad(5 , 100,$interes) ;
-    echo "&#x20AC; en 5 años.</p>" ;
-    echo " <p>Si usted deposita 1.500&#x20AC; hoy, sus ahorros crecerán a " ;
-    echo calculaCantidad(20 , 1500,$interes) ;
-    echo "&#x20AC; después de 20 años.</p>" ;   
-     
+    
+    $interes = 5;
+    echo "<p><b>El interés actual es $interes%.</b></p>";
+    echo " <p>Si usted deposita 100 &#x20AC; hoy, sus ahorros crecerán a ";
+    echo calculaCantidad(5, 100, $interes);
+    echo "&#x20AC; en 5 años.</p>";
+    echo " <p>Si usted deposita 1.500&#x20AC; hoy, sus ahorros crecerán a ";
+    echo calculaCantidad(20, 1500, $interes);
+    echo "&#x20AC; después de 20 años.</p>";
     ?>
 </body>
 </html>
