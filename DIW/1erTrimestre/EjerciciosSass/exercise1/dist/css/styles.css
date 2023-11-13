@@ -1,18 +1,61 @@
-/* Error: expected ":".
- *   ,
- * 5 | $primary_
- *   |          ^
- *   '
- *   Documents\2DAW\DIW\1erTrimestre\EjerciciosSass\exercise1\scss\_variables.scss 5:10  @import
- *   Documents\2DAW\DIW\1erTrimestre\EjerciciosSass\exercise1\scss\style.scss 1:9        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ":".\a   \2577 \a 5 \2502  $primary_\a   \2502           ^\a   \2575 \a   Documents\\2DAW\\DIW\\1erTrimestre\\EjerciciosSass\\exercise1\\scss\\_variables.scss 5:10  @import\a   Documents\\2DAW\\DIW\\1erTrimestre\\EjerciciosSass\\exercise1\\scss\\style.scss 1:9        root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+* {
+  font-family: "Gotu", sans-serif;
 }
+
+nav {
+  padding: 2rem;
+  padding-bottom: 0;
+}
+nav ul {
+  list-style: none;
+  border: 2px solid #051c1a;
+  background-color: turquoise;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav ul li {
+  padding-left: 0;
+  border-right: 2px solid #051c1a;
+  width: 100%;
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li:hover {
+  animation: cambiarColor 1s;
+}
+nav ul li a {
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  color: #051c1a;
+  text-decoration: none;
+  padding: 1rem;
+}
+nav ul li a:hover {
+  animation: cambiarColor 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cambiarColor {
+  from {
+    background-color: turquoise;
+    color: #051c1a;
+  }
+  to {
+    background-color: #051c1a;
+    color: white;
+  }
+}
+main {
+  padding: 3rem;
+}
+main h1 {
+  color: #051c1a;
+}
+
+/*# sourceMappingURL=styles.css.map */
