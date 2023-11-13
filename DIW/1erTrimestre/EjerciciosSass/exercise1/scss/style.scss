@@ -1,0 +1,59 @@
+@import 'variables';
+*{
+    font-family: $fontstack;
+}
+nav{
+    padding: 2rem;
+    padding-bottom: 0;
+    ul{
+        list-style: none;
+        border: 2px solid $primary_dark;
+        background-color: $primary;
+        display:flex;
+        justify-content: space-between;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        li{
+
+            padding-left: 0;
+            border-right: 2px solid $primary_dark;
+            width: 100%;
+            &:last-child{
+                border-right: none;
+            }
+            &:hover{
+                animation: cambiarColor 1s;
+            }
+            a{
+                margin-left: 0;
+                display: flex;
+                justify-content: center;
+                color: $primary_dark;
+                text-decoration: none;
+                padding: 1rem;
+                &:hover{
+                    animation: cambiarColor 1s;
+                    animation-fill-mode: forwards;
+                }
+            }       
+        }
+    }
+}
+@keyframes cambiarColor{
+    from {
+        background-color: $primary;
+        color: $primary_dark;
+    }
+
+    to {
+        background-color: $primary_dark;
+        color: white;
+    }
+}
+main{
+    padding: 3rem;
+    h1{
+        color: $primary_dark;
+    }
+}
