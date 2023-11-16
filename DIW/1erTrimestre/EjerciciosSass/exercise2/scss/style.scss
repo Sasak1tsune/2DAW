@@ -1,0 +1,43 @@
+// Variables
+$small: 576px;
+$medium: 768px;
+
+// Mixin
+@mixin layout($color, $size: 14px) {
+  color: $color;
+  background-color: adjust-color($color, $lightness: -20%);
+  font-size: $size;
+  margin: $size;
+  padding: $size;
+  line-height: 1.5;
+  border: 5px solid $color;
+}
+
+// normalize
+*{
+  margin: 0;
+  padding: 0;
+}
+
+// Body padding
+body {
+  padding: 20px;
+}
+
+// Font
+body {
+  font-family: Verdana, sans-serif;
+}
+
+// Container styling using mixin
+#container {
+  @include layout(darkred); // Default size of 14px
+
+  @media screen and (max-width: $small) {
+    @include layout(darkblue, 16px);
+  }
+
+  @media screen and (min-width: $medium) {
+    @include layout(darkgreen, 20px);
+  }
+}
