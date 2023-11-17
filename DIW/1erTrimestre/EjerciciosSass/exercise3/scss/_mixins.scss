@@ -1,0 +1,34 @@
+@mixin plantilla ($color, $size) {
+    border: solid 10px;
+    article {  
+        color: $color;
+        background-color: invert($color);
+        margin: $size;
+        padding: $size;
+        line-height: 1.5;
+    }
+}
+
+@mixin boton($color, $size) {
+    background-color: invert($color);
+    color: $color;
+    margin: $size;
+    padding: $size;
+    border: solid 10px;
+    &:hover {
+        animation: cambiarColor 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes cambiarColor{
+        from {
+            background-color: invert($color);
+            color: $color;
+            
+        }
+    
+        to {
+            background-color:$color;
+            color: invert($color);
+        }
+    }
+}

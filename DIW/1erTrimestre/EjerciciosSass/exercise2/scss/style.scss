@@ -1,9 +1,13 @@
-// Variables
+*{
+  margin: 0;
+  padding: 0;
+
+}
 $small: 576px;
 $medium: 768px;
 
 // Mixin
-@mixin layout($color, $size: 14px) {
+@mixin plantilla($color, $size: 14px) {
   color: $color;
   background-color: adjust-color(invert($color), $lightness: 20%);
   font-size: $size;
@@ -13,31 +17,18 @@ $medium: 768px;
   border: 5px solid $color;
 }
 
-// normalize
-*{
-  margin: 0;
-  padding: 0;
-}
-
-// Body padding
 body {
-  padding: 20px;
-}
-
-// Font
-body {
+  padding: 1rem;
   font-family: Verdana, sans-serif;
 }
-
-// Container styling using mixin
 #container {
-  @include layout(darkred); // Default size of 14px
+  @include plantilla(darkred); // Default size of 14px
 
   @media screen and (max-width: $small) {
-    @include layout(darkblue, 16px);
+    @include plantilla(darkblue, 16px);
   }
 
   @media screen and (min-width: $medium) {
-    @include layout(darkgreen, 20px);
+    @include plantilla(darkgreen, 20px);
   }
 }
