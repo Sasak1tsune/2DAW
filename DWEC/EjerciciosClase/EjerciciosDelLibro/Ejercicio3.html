@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Búsqueda de Palabra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+<div style="background-color: turquoise; padding-top: 10px; padding-bottom: 10px;">
+    <h1>Búsqueda de Palabra</h1>
+</div>
+
+
+<p>Introduce una frase:</p>
+<input type="text" id="fraseInput" placeholder="Escribe una frase">
+
+<p>Palabra a buscar:</p>
+<input type="text" id="palabraInput" placeholder="Palabra a buscar">
+
+<button onclick="buscarPalabra()">Buscar</button>
+
+<div id="result"></div>
+
+<script>
+  function buscarPalabra() {
+    // Obtén la frase y la palabra desde los campos de entrada
+    const frase = document.getElementById("fraseInput").value.toLowerCase();
+    const palabra = document.getElementById("palabraInput").value.toLowerCase();
+
+    // Verifica si la frase y la palabra no están vacías
+    if (frase.trim() === "" || palabra.trim() === "") {
+      alert("Pero ingresa una frase, perro desgraciado");
+      return;
+    }
+
+    // Busca la última posición de la palabra en la frase
+    const ultimaPosicion = frase.lastIndexOf(palabra);
+
+    // Muestra el resultado
+    const resultElement = document.getElementById("result");
+    resultElement.textContent = ultimaPosicion !== -1
+      ? `La última posición de "${palabra}" en la frase es: ${ultimaPosicion}`
+      : `"${palabra}" no se encuentra en la frase.`;
+  }
+</script>
+
+</body>
+</html>

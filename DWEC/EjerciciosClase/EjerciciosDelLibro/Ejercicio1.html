@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio con Math.random()</title>
+</head>
+<body>
+
+<h1 id="saludo"></h1>
+
+<script>
+  var numeroAleatorio = Math.random();
+  var horaActual = new Date().getHours();
+  var saludoElement = document.getElementById("saludo");
+
+  if (numeroAleatorio < 0.5) {
+    saludoElement.innerHTML = '<a href="http://myfpschool.com/" target="_blank">Visitar Myfpschool.com</a>';
+  } else {
+    if (horaActual < 15) {
+      saludoElement.textContent = '¡Buenos días!';
+    } else {
+      saludoElement.textContent = '¡Buenas tardes!';
+    }
+  }
+</script>
+
+</body>
+</html>
