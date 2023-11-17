@@ -12,5 +12,8 @@ body{
     }
 }
 .boton{
-    @include boton(black, 14px);
+    @include boton(white, 14px);
+    @media  screen and (min-width: $medium) {
+        @include boton(black, 14px);
+    }
 }
