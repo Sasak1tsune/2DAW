@@ -1,0 +1,24 @@
+@import 'mixins';
+@import 'reboot';
+
+
+img{
+    &:nth-child(1){
+        @include frame($thickness: 3px);
+    }
+    &:nth-child(2){
+        @include frame($thickness: 3px, $style: dotted);
+    }
+    &:nth-child(3){
+        @include frame($thickness: 3px, $style: solid, $color-border: mediumseagreen);
+    }
+    &:nth-child(4){
+        @include frame($thickness: 6px, $style: solid, $color-border: #b8181b, $color-bg: #e7d5c2, $padding: 20px, $radius: 50%)
+    }
+    &:nth-child(5){
+        @include frame($thickness: 6px, $style: dashed, $color-border: rgb(109,85,106), $color-bg: peru, $padding: 20px, $radius: 50%)
+    }
+    &:nth-child(6){
+        @include frame($thickness: 3px, $color-bg: #aac5d9, $padding: 20px, $radius: 50%)
+    }
+}

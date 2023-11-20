@@ -1,0 +1,28 @@
+body {
+    font-family: Geneva, sans-serif;
+    color: #000;
+    background-color: #ccc;
+    padding-top: 20px;
+  }
+  
+  article {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  img {
+    width: 225px;
+    height: 225px;
+    margin-bottom: 20px;
+  }
+  
+  
