@@ -1,0 +1,71 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../../../bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$breadcrumb-divider: "·";
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../../../../bootstrap/scss/variables";
+@import "../../../../bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../../../../bootstrap/scss/maps";
+@import "../../../../bootstrap/scss/mixins";
+@import "../../../../bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../../../../bootstrap/scss/utilities";
+@import "../../../../bootstrap/scss/reboot";
+@import "../../../../bootstrap/scss/type";
+@import "../../../../bootstrap/scss/images";
+@import "../../../../bootstrap/scss/containers";
+@import "../../../../bootstrap/scss/grid";
+@import "../../../../bootstrap/scss/helpers";
+@import "../../../../bootstrap/scss/breadcrumb";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../../../../bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+@mixin tarjeta-compra($color-texto: black, $color-fondo: white, $pd: 10px) {
+    background-color: $color-fondo;
+    color: $color-texto;
+    padding: $pd;
+
+    .card-body {
+
+        margin-top: 20px;
+
+        ul {
+            list-style: none;
+
+            li::before {
+                content: '✓';
+                color: $color-texto;
+            }
+        }
+
+        a {
+            margin-top: 100px;
+            background-color: invert($color: $color-fondo);
+            text-decoration: none;
+            color: invert($color: $color-texto);
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}
+
+.tarjeta-blanca {
+    @include tarjeta-compra();
+}
+
+.tarjeta-negra {
+    @include tarjeta-compra(white, black, 10px)
+}

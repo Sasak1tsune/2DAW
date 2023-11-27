@@ -1,0 +1,61 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+    $breadcrumb-divider: "·";
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../bootstrap/scss/utilities";
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+@import "../bootstrap/scss/images";
+@import "../bootstrap/scss/containers";
+@import "../bootstrap/scss/grid";
+@import "../bootstrap/scss/helpers";
+@import "../bootstrap/scss/breadcrumb";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+@mixin breadcrumb-divider {
+    // Aplica estilos a todos los elementos que no son el último hijo
+    &:not(:last-child)::before {
+        float: left; // Flota el separador a la izquierda
+        padding-right: 0.5rem; // Agrega algún espacio de relleno a la derecha del separador
+        transform: translateY(-3px); // Ajusta la posición vertical del separador
+        color: #6c757d; // Establece el color del separador
+        content: $breadcrumb-divider; // Establece el contenido del separador usando una variable
+    }
+    
+    // Aplica estilos al último hijo
+    &:last-child::before {
+        content: $breadcrumb-divider; // Establece el contenido del separador usando una variable
+        transform: translateY(-3px); // Ajusta la posición vertical del separador
+    }
+}
+
+// Define estilos para el contenedor de las migas de pan
+.breadcrumb {
+    display: flex; // Usa flexbox para el diseño
+    justify-content: center; // Centra el contenido horizontalmente
+    border-radius: 20px; // Agrega esquinas redondeadas al contenedor
+    padding: 10px; // Agrega espacio interno al contenedor
+    background-color: #f0f0f0; // Establece el color de fondo del contenedor
+}
+
+// Aplica el mixin breadcrumb-divider a elementos con la clase 'breadcrumb'
+@include breadcrumb-divider;
