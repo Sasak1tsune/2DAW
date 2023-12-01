@@ -32,7 +32,6 @@ function ejecutar(){
     alert(combinacionesUsadas);
     alert(combiContador);
 }
-window.onload(ejecutar);
 //Frases para combinar
 const frases1 = [
     "Queridos compañeros",
