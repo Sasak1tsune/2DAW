@@ -23,7 +23,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item slideIn">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html"><img
                                     src="https://piapro.net/intl/images/id_piapro.png" alt="PiaproLogo"
                                     style="width: 120px; height: 20px;"></a>
@@ -47,8 +47,9 @@
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col-12">
                     <h1 class="text-center titulo">Sobre PIAPRO</h1>
-                    <img class="imagen-personaje"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4379ea94-c866-4f3a-a5e6-34b4d116f2d8/d9td8pd-d8ccea13-3e1a-4aaa-ab23-5177da12b412.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQzNzllYTk0LWM4NjYtNGYzYS1hNWU2LTM0YjRkMTE2ZjJkOFwvZDl0ZDhwZC1kOGNjZWExMy0zZTFhLTRhYWEtYWIyMy01MTc3ZGExMmI0MTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wmyJp9A-kOQJGnmkgxH8uGlSnEBjCEUFO9Gw8_Zee88"
+                    <!--no uso el picture pues es el mismo favicon que se guarda en cache al cargar la homepage-->
+                    <img class="imagen-personaje" 
+                        src="favicon.png"
                         alt="miku">
                     <br>
                     <p class="text-center">esta página pertenece al portal web sobre "Personajes Piapro" y ha sido
@@ -63,8 +64,31 @@
             <div class="row g-3">
                 <div class="col-12 col-md-6  text-center">
                     <div class="card card-info h-100">
-                        <img src="https://i.ytimg.com/vi/nhh3NNOuV3I/maxresdefault.jpg" class="card-img-top"
-                            alt="Crypton">
+                        <picture class="card-img-top">
+                            <!-- Pantalla XL -->
+                            <source srcset="Imagenes/Piapro/cryptonLogo-normal.webp" type="image/webp" media="(min-width: 1280px)">
+                            <source srcset="Imagenes/Piapro/cryptonLogo-normal.avif" type="image/avif" media="(min-width: 1280px)">
+                            <source srcset="Imagenes/Piapro/cryptonLogo-normal.jpg" type="image/jpeg" media="(min-width: 1280px)">
+                            
+                            <!-- Pantalla LG -->
+                            <source srcset="Imagenes/Piapro/cryptonLogo-75.webp" type="image/webp" media="(min-width: 720px)">
+                            <source srcset="Imagenes/Piapro/cryptonLogo-75.avif" type="image/avif" media="(min-width: 720px)">
+                            <source srcset="Imagenes/Piapro/cryptonLogo-75.jpg" type="image/jpeg" media="(min-width: 720px)">
+                            
+                            <!-- Pantalla MD -->
+                            <source srcset="Imagenes/Piapro/cryptonLogo-50.webp" type="image/webp" media="(min-width: 480px)">
+                            <source srcset="Imagenes/Piapro/cryptonLogo-50.avif" type="image/avif" media="(min-width: 480px)">
+                            <source srcset="Imagenes/Piapro/cryptonLogo-50.jpg" type="image/jpeg" media="(min-width: 480px)">
+                            
+                            <!-- Pantalla SM -->
+                            <source srcset="Imagenes/Piapro/cryptonLogo-25.webp" type="image/webp">
+                            <source srcset="Imagenes/Piapro/cryptonLogo-25.avif" type="image/avif">
+                            <source srcset="Imagenes/Piapro/cryptonLogo-25.jpg" type="image/jpeg">
+                            
+                            <!-- Imagen predeterminada -->
+                            <img src="Imagenes/Piapro/cryptonLogo-normal.jpg" alt="Crypton Logo" class="card-img-top">
+                        </picture>
+                        
                         <div class="card-body">
                             <h5 class="card-title"><b>Crypton Future Media Inc.</b></h5>
                             <p class="card-text">Crypton Future Media Inc. es una empresa japonesa que ha dejado una
@@ -85,8 +109,30 @@
                 </div>
                 <div class="col-12 col-md-6  text-center">
                     <div class="card card-info h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Hiroyuki_Ito_20081012.jpg"
-                            class="card-img-top" alt="Hiroyuki">
+                        <picture class="card-img-top">
+                            <!-- Pantalla XL -->
+                            <source srcset="Imagenes/Piapro/hiroyuki-normal.webp" type="image/webp" media="(min-width: 1280px)">
+                            <source srcset="Imagenes/Piapro/hiroyuki-normal.avif" type="image/avif" media="(min-width: 1280px)">
+                            <source srcset="Imagenes/Piapro/hiroyuki-normal.jpg" type="image/jpeg" media="(min-width: 1280px)">
+                            
+                            <!-- Pantalla LG -->
+                            <source srcset="Imagenes/Piapro/hiroyuki-75.webp" type="image/webp" media="(min-width: 720px)">
+                            <source srcset="Imagenes/Piapro/hiroyuki-75.avif" type="image/avif" media="(min-width: 720px)">
+                            <source srcset="Imagenes/Piapro/hiroyuki-75.jpg" type="image/jpeg" media="(min-width: 720px)">
+                            
+                            <!-- Pantalla MD -->
+                            <source srcset="Imagenes/Piapro/hiroyuki-50.webp" type="image/webp" media="(min-width: 480px)">
+                            <source srcset="Imagenes/Piapro/hiroyuki-50.avif" type="image/avif" media="(min-width: 480px)">
+                            <source srcset="Imagenes/Piapro/hiroyuki-50.jpg" type="image/jpeg" media="(min-width: 480px)">
+                            
+                            <!-- Pantalla SM -->
+                            <source srcset="Imagenes/Piapro/hiroyuki-25.webp" type="image/webp">
+                            <source srcset="Imagenes/Piapro/hiroyuki-25.avif" type="image/avif">
+                            <source srcset="Imagenes/Piapro/hiroyuki-25.jpg" type="image/jpeg">
+                            
+                            <!-- Imagen predeterminada -->
+                            <img src="Imagenes/Piapro/hiroyuki-normal.jpg" alt="hiro" class="card-img-top">
+                        </picture>    
                         <div class="card-body">
                             <h5 class="card-title"><b>Hiroyuki Itō</b></h5>
                             <p class="card-text">Hiroyuki Ito (伊藤 裕之), es un productor, director y diseñador de juegos
@@ -100,8 +146,31 @@
                 <div class="col-12  text-center">
                     <div class="card card-info h-100">
                         <br>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/CFM_Piapro_Logo.svg/440px-CFM_Piapro_Logo.svg.png?20180716045703"
-                            class="card-img-top" alt="Piapro" style="max-width: 500px;">
+                        <picture class="card-img-top">
+                            <!-- Pantalla XL -->
+                            <source srcset="Imagenes/Piapro/piapro-normal.webp" type="image/webp" media="(min-width: 1280px)">
+                            <source srcset="Imagenes/Piapro/piapro-normal.avif" type="image/avif" media="(min-width: 1280px)">
+                            <source srcset="Imagenes/Piapro/piapro-normal.jpg" type="image/jpeg" media="(min-width: 1280px)">
+                            
+                            <!-- Pantalla LG -->
+                            <source srcset="Imagenes/Piapro/piapro-75.webp" type="image/webp" media="(min-width: 720px)">
+                            <source srcset="Imagenes/Piapro/piapro-75.avif" type="image/avif" media="(min-width: 720px)">
+                            <source srcset="Imagenes/Piapro/piapro-75.jpg" type="image/jpeg" media="(min-width: 720px)">
+                            
+                            <!-- Pantalla MD -->
+                            <source srcset="Imagenes/Piapro/piapro-50.webp" type="image/webp" media="(min-width: 480px)">
+                            <source srcset="Imagenes/Piapro/piapro-50.avif" type="image/avif" media="(min-width: 480px)">
+                            <source srcset="Imagenes/Piapro/piapro-50.jpg" type="image/jpeg" media="(min-width: 480px)">
+                            
+                            <!-- Pantalla SM -->
+                            <source srcset="Imagenes/Piapro/piapro-25.webp" type="image/webp">
+                            <source srcset="Imagenes/Piapro/piapro-25.avif" type="image/avif">
+                            <source srcset="Imagenes/Piapro/piapro-25.jpg" type="image/jpeg">
+                            
+                            <!-- Imagen predeterminada -->
+                            <img src="Imagenes/Piapro/piapro-normal.jpg" alt="Piapro" class="card-img-top" style="max-width: 500px;">
+                        </picture>
+                        
                         <div class="card-body">
                             <h5 class="card-title"><b>PIAPRO</b></h5>
                             <p class="card-text">La empresa subsidiaria Piapro no solo se trata de la música,
