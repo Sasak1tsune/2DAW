@@ -17,15 +17,31 @@ function ejercicioCuatrimestre() {
   }
 
   function ejercicioPotencia() {
-    const numero = parseFloat(prompt('Ingrese un número:'));
-    const resultado = Math.pow(numero, 3);
+    let numero = parseFloat(prompt('Ingrese un número:'));
+    let resultado = Math.pow(numero, 3);
 
     alert(`El número ${numero} elevado a la tercera potencia es: ${resultado}`);
   }
 
   function ejercicioRaizCuadrada() {
-    const valor = parseFloat(prompt('Ingrese un valor para calcular la raíz cuadrada:'));
-    const raizCuadrada = Math.sqrt(valor);
+    let valor = parseFloat(prompt('Ingrese un valor para calcular la raíz cuadrada:'));
+    let raizCuadrada = Math.sqrt(valor);
 
     alert(`La raíz cuadrada de ${valor} es: ${raizCuadrada}`);
+  }
+  function capturarNombres(insensitivo) {
+    let nombres = [];
+    let nombre;
+    do {
+      nombre = prompt("Inserte un nombre, inserte 'Fin' para finalizar");
+      if (insensitivo==true && nombre=="fin" || insensitivo==true && nombre=="FIN" ){//En caso de ejecutarse de manera insensitiva acepta la instruccion fin como salida
+        nombre="Fin";
+      }
+      if (nombre!="Fin"){
+        nombres.push(nombre);
+      }else{
+        alert("Programa finalizado");
+        alert(nombres);
+      }
+    } while(nombre!="Fin");
   }
