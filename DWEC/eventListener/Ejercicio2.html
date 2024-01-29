@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Nombre" id="nombre">
+    <br>
+    <br>
+    <input type="text" placeholder="Apellidos" id="apellidos">
+    <br>
+    <br>
+    <h1 id="botonh1" >pincha aqui</h1>
+    <script>
+        var boton = document.getElementById("botonh1");
+        boton.addEventListener("click", validar);
+
+        function validar(){
+            var nombre = document.getElementById("nombre");
+            var apellidos = document.getElementById("apellidos");
+
+            if (nombre !="" || apellidos !=""){
+                alert("Validado con exito!");
+            }else{
+                alert("Escribe algo en el campo de texto");
+            }
+        }
+    </script>
+</body>
+
+</html>
