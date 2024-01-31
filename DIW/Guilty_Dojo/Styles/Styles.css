@@ -7,6 +7,8 @@
   --text-light: #FBFFFE;
   --text-dark: #8f0806;
   --link-hover: #982F0B;
+  --background-container: #41393693;
+  --fondo-video: #0a0a0a9a;
 }
 
 body {
@@ -27,11 +29,14 @@ body {
 }
 
 .container {
-  max-width: 800px;
-  margin-top: 20px;
-  background-color: var(--main-bg-color);
-  border-radius: 5px;
-  padding: 20px;
+  background-color: var(--background-container);
+  padding: 50px;
+  margin-top: 5vh;
+  border-radius: 9px;
+}
+
+.tarjeta-personaje {
+  margin-top: 10vh;
 }
 
 h1 {
@@ -68,6 +73,32 @@ h1 {
   background-color: var(--link-hover);
 }
 
+footer {
+  margin-top: auto;
+  /* Asegura que el pie de página se quede al final de la página */
+  padding: 20px;
+  /* Espaciado interno para mejorar la apariencia */
+  background-color: var(--fondo-video);
+  color: var(--text-light);
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  /* Fija el pie de página en la parte inferior */
+  width: 100%;
+}
+footer a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+footer a:hover, footer a:focus {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+footer a:visited {
+  color: var(--text-light);
+  /* Cambia el color de los enlaces visitados */
+}
+
 /* Estilo para los indicadores/dots del carrusel */
 .carousel-indicators li {
   background-color: var(--main-bg-color);
@@ -101,28 +132,32 @@ h1 {
 #contenedor-video {
   position: relative;
   width: 100%;
-  height: 100vh; /* Establece la altura del div al 100% del viewport height */
+  height: 100vh;
+  /* Establece la altura del div al 100% del viewport height */
   overflow: hidden;
 }
 
 video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta el tamaño del video para cubrir completamente el contenedor */
+  object-fit: cover;
+  /* Ajusta el tamaño del video para cubrir completamente el contenedor */
   position: absolute;
   top: 0;
 }
 
 .jump-hover:hover {
   transition: transform 0.2s;
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 #video-container {
   position: relative;
   width: 100%;
-  height: 400px; /* Ajusta la altura según sea necesario */
+  height: 400px;
+  /* Ajusta la altura según sea necesario */
   overflow: hidden;
+  border-radius: 20px;
 }
 
 #video-background {
@@ -136,7 +171,12 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
+  background-color: var(--fondo-video);
+}
+.contenido h1 p {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=Styles.css.map */
