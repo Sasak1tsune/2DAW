@@ -14,75 +14,45 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar" role="navigation">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"><img src="Images/logo.png" alt="logo"
-                                    style="width: 120px; height: 20px;"></a>
+                            <a class="nav-link" href="index.html" aria-label="Enlace al inicio"><img
+                                    src="Images/logo.webp" alt="logo" style="width: 120px; height: 20px;"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="charsGuide.html">Personajes</a>
+                            <a class="nav-link" href="charsGuide.html" aria-label="Enlace a la guía de personajes">
+                                Personajes
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
         <!-- Carrusel de imágenes -->
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col-12">
-                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel" role="region"
+                        aria-label="Carrusel de imágenes">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button tabindex="-1" type="button" data-bs-target="#demo" data-bs-slide-to="0"
+                                class="active" aria-label="Imagen 1"></button>
+                            <button tabindex="-1" type="button" data-bs-target="#demo" data-bs-slide-to="1"
+                                aria-label="Imagen 2"></button>
                         </div>
                         <div class="carousel-inner">
-                            <a href="https://store.steampowered.com/app/1384160/GUILTY_GEAR_STRIVE/?l">
+                            <a href="https://store.steampowered.com/app/1384160/GUILTY_GEAR_STRIVE/?l"
+                                aria-label="Enlace a Steam">
                                 <div class="carousel-item active">
-                                    <picture>
-                                        <!-- Pantalla XL -->
-                                        <source srcset="Images/Index/Guilty_Title-normal.webp" type="image/webp"
-                                            media="(max-width: 1280px)">
-                                        <source srcset="Images/Index/Guilty_Title-normal.avif" type="image/avif"
-                                            media="(max-width: 1280px)">
-                                        <source srcset="Images/Index/Guilty_Title-normal.png" type="image/jpeg"
-                                            media="(max-width: 1280px)">
-
-                                        <!-- Pantalla LG -->
-                                        <source srcset="Images/Index/Guilty_Title-85.webp" type="image/webp"
-                                            media="(max-width: 720px)">
-                                        <source srcset="Images/Index/Guilty_Title-85.avif" type="image/avif"
-                                            media="(max-width: 720px)">
-                                        <source srcset="Images/Index/Guilty_Title-85.png" type="image/jpeg"
-                                            media="(max-width: 720px)">
-
-                                        <!-- Pantalla MD -->
-                                        <source srcset="Images/Index/Guilty_Title-75.webp" type="image/webp"
-                                            media="(max-width: 480px)">
-                                        <source srcset="Images/Index/Guilty_Title-75.avif" type="image/avif"
-                                            media="(max-width: 480px)">
-                                        <source srcset="Images/Index/Guilty_Title-75.png" type="image/jpeg"
-                                            media="(max-width: 480px)">
-
-                                        <!-- Imagen predeterminada -->
-                                        <img src="Images/Index/Guilty_Title-normal.png" class="img-fluid" alt="Title">
-                                    </picture>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h1>A la venta en steam</h1>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="charsGuide.html">
-                                <div class="carousel-item">
                                     <picture>
                                         <!-- Pantalla XL -->
                                         <source srcset="Images/Index/Title_2-normal.webp" type="image/webp"
@@ -91,7 +61,6 @@
                                             media="(max-width: 1280px)">
                                         <source srcset="Images/Index/Title_2-normal.png" type="image/jpeg"
                                             media="(max-width: 1280px)">
-
                                         <!-- Pantalla LG -->
                                         <source srcset="Images/Index/Title_2-85.webp" type="image/webp"
                                             media="(max-width: 720px)">
@@ -99,7 +68,6 @@
                                             media="(max-width: 720px)">
                                         <source srcset="Images/Index/Title_2-85.png" type="image/jpeg"
                                             media="(max-width: 720px)">
-
                                         <!-- Pantalla MD -->
                                         <source srcset="Images/Index/Title_2-75.webp" type="image/webp"
                                             media="(max-width: 480px)">
@@ -107,22 +75,48 @@
                                             media="(max-width: 480px)">
                                         <source srcset="Images/Index/Title_2-75.png" type="image/jpeg"
                                             media="(max-width: 480px)">
-
                                         <!-- Imagen predeterminada -->
-                                        <img src="Images/Index/Title_2-normal.png" class="img-fluid" alt="Title2">
+                                        <img src="Images/Index/Title_2-normal.avif" class="img-fluid" alt="Guilty Gear">
                                     </picture>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h1>Nuevos personajes</h1>
-                                    </div>
+                                </div>
+                            </a>
+                            <a href="charsGuide.html" aria-label="Enlace a la guía de personajes">
+                                <div class="carousel-item">
+                                    <picture>
+                                        <!-- Pantalla XL -->
+                                        <source srcset="Images/Index/Guilty_Title-normal.webp" type="image/webp">
+                                        <source srcset="Images/Index/Guilty_Title-normal.avif" type="image/avif"
+                                            media="(max-width: 1280px)">
+                                        <source srcset="Images/Index/Guilty_Title-normal.png" type="image/jpeg"
+                                            media="(max-width: 1280px)">
+                                        <!-- Pantalla LG -->
+                                        <source srcset="Images/Index/Guilty_Title-85.webp" type="image/webp"
+                                            media="(max-width: 720px)">
+                                        <source srcset="Images/Index/Guilty_Title-85.avif" type="image/avif"
+                                            media="(max-width: 720px)">
+                                        <source srcset="Images/Index/Guilty_Title-85.png" type="image/jpeg"
+                                            media="(max-width: 720px)">
+                                        <!-- Pantalla MD -->
+                                        <source srcset="Images/Index/Guilty_Title-75.webp" type="image/webp"
+                                            media="(max-width: 480px)">
+                                        <source srcset="Images/Index/Guilty_Title-75.avif" type="image/avif"
+                                            media="(max-width: 480px)">
+                                        <source srcset="Images/Index/Guilty_Title-75.png" type="image/jpeg"
+                                            media="(max-width: 480px)">
+                                        <!-- Imagen predeterminada -->
+                                        <img src="Images/Index/Guilty_Title-normal.avif" class="img-fluid"
+                                            alt="Personajes">
+                                    </picture>
                                 </div>
                             </a>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
                     </div>
                 </div>
             </div>
@@ -146,9 +140,9 @@
                         Experimenta combates intensos y rápidos que desafiarán tus habilidades y estrategias. <br>
                         ¡Prepárate para la acción, la emoción y la grandeza con "Guilty Gear Strive"!</p>
                     <a href="https://store.steampowered.com/app/1384160/GUILTY_GEAR_STRIVE/?l" class="btn btn-primary"
-                        target="_blank" rel="noopener noreferrer">Comprar en Steam <span></span><svg
-                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-steam" viewBox="0 0 16 16">
+                        target="_blank" rel="noopener noreferrer" aria-label="Enlace para comprar en Steam">Comprar en
+                        Steam <span></span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-steam" viewBox="0 0 16 16">
                             <path
                                 d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.22 2.22 0 0 1-1.312-1.568L.33 10.333Z" />
                             <path
@@ -161,21 +155,20 @@
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item autoplay muted loop"
                             src="Video/Guilty Gear -Strive- Opening Movie-noSound.webm?autoplay=1&showinfo=0&controls=0"
-                            frameborder="0" allowfullscreen></iframe>
+                            frameborder="0" allowfullscreen
+                            aria-label="Video de apertura de Guilty Gear Strive"></iframe>
                     </div>
                 </div>
+            </div>
+            <div id="formulario">
 
             </div>
-
-
-
         </div>
-
     </main>
     <footer>
         <div class="text-center">
             <p>Juan Pablo Perea Santos, 2024</p>
-            <a href="https://github.com/Sasak1tsune" target="_blank">
+            <a href="https://github.com/Sasak1tsune" target="_blank" aria-label="Github">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
                     viewBox="0 0 16 16">
                     <path
@@ -187,7 +180,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-
 </body>
 
 </html>

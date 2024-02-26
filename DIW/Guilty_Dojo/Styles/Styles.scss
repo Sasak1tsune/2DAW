@@ -1,14 +1,16 @@
 /* Definir variables para los colores */
 :root {
-  --main-bg-color: #1d110a;
+  --main-bg-color: #1f1208;
   --navbar-bg-color: #000000;
   --text-light: #FBFFFE;
-  --text-dark: #8f0806;
+  --text-dark: #ff0400;
   --link-hover: #982F0B;
-  --background-container: #41393693;
+  --background-container: #2b282693;
   --fondo-video: #0a0a0a9a;
 }
-
+.img-fluid{
+  size: 100wh;
+}
 //Importo las fuentes de google
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
 
@@ -75,7 +77,7 @@ h1 {
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
-  background-color: var(--text-dark);
+  background-color: #fbfffe00;
 
   &:hover {
     background-color: var(--link-hover);
@@ -197,4 +199,52 @@ video {
   h1 p {
     margin: 10px;
   }
+}
+.formulario{
+  #contact {
+    color: var(--text-light);
+    background: var(--background-container);
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+h3, h4 {
+    text-align: center;
+    font-family: "New Rocker";
+    color: var(--text-dark);
+}
+label {
+    display: inline-block;
+    width: 150px; /* Ancho fijo para las etiquetas */
+    text-align: center;
+    align-self: center;
+    margin-right: 15px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    width: calc(100% - 180px); /* Resta el ancho de la etiqueta y un margen */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 150px;
+}
+button {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: var(--link-hover);
+}
 }
